@@ -1,0 +1,27 @@
+.TH SNT 1 "August 2024" "snt version 0.1" ""
+.SH NAME
+snt \- simple new terminal
+.SH SYNOPSIS
+.B snt
+[\fB\-c\fR \fIclass\fR] [\fB\-n\fR \fIname\fR] [\fB\-w\fR \fIwidth\fR] [\fB\-h\fR \fIheight\fR] [\fB\-e\fR \fIcommand\fR]
+.SH DESCRIPTION
+snt is a terminal emulator based on GTK+ and VTE.
+.TP
+.B \-c \fIclass
+defines the window class.
+.TP
+.B \-n \fIname
+defines the window instance name.
+.TP
+.B \-e \fIcommand
+snt executes command instead of the shell. If this is used it must be the last option on the command line, as in st and xterm.
+.TP
+.B \-w \fIwidth
+sets the initial width of the window in pixels.
+.TP
+.B \-h \fIheight
+sets the initial height of the window in pixels.
+.SH CUSTOMIZATION
+snt can be customized primarily by modifying config.h and recompiling the source code. This keeps it fast, secure, and simple. However, padding settings rely on GTK3.
+.SH AUTHOR
+Kamal El balaidi
