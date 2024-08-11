@@ -1,5 +1,9 @@
+
+![](snt.png)
+
+
 # SNT
-![SNT](snt.png)
+
 snt - Simple new terminal support for BiDi languages 
 ## Installation
 ```bash
@@ -16,4 +20,4 @@ sudo make uninstall
 ```
 ## License
 
-[MIT](LICENSE.md)
+[MIT](LICENSE)
