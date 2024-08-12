@@ -1,4 +1,6 @@
-# ![SNT](snt.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kamal-elbalaidi/snt/main/snt.png" alt="SNT">
+</p>
 
 snt is a terminal emulator based on GTK+ and VTE.
 ## Customization
@@ -15,7 +17,6 @@ cd snt/
 sudo make install clean
 ```
 ## Options
-### Options
 
 #### `-c class`
 Defines the window class.
@@ -38,7 +39,7 @@ cd snt/
 sudo make uninstall
 ```
 ## Author
-#### ` kamal El balaidi`
+#####  kamal El balaidi
 
 ## License
 
