@@ -4,4 +4,5 @@ Name=snt
 Comment=Simple new Terminal
 Exec=/usr/bin/snt
 Icon=/usr/share/icons/hicolor/512x512/apps/snt.png
-type=Application
+Terminal=false
+Type=Application
