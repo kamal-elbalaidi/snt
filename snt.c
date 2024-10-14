@@ -32,6 +32,7 @@ static void scroll_terminal(VteTerminal *terminal, gboolean up, gboolean page) {
 
 int main(int argc, char *argv[]) {
     GtkWidget *window;
+    GdkPixbuf *icon;
     static char **command = NULL;
     const char *instance_name = termname;
     const char *class_name = termname;
@@ -50,8 +51,15 @@ int main(int argc, char *argv[]) {
             else if (strcmp(argv[i], "-h") == 0) height = argv[++i];
         }
     }
-
     window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+    // Set icon
+    icon = gdk_pixbuf_new_from_file("/usr/share/icons/hicolor/512x512/apps/snt.png" ,NULL);
+    if (icon){
+      gtk_window_set_icon(GTK_WINDOW(window),icon);
+      g_object_unref(icon);
+    }else {
+      g_print("Feild Icon");
+    }
     gtk_window_set_title(GTK_WINDOW(window), TITLE);
     gtk_window_set_default_size(GTK_WINDOW(window), atoi(width), atoi(height));
 
