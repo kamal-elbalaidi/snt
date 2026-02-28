@@ -44,8 +44,8 @@ static const char* get_css_config() {
 }
 
 // Variables
-static const char *height      = HEIGHT;                // height size  window
-static const char *width       = WIDTH;                 // width size  window
-static const char *termname    = "snt";                 // terminal name
-static const char *shell       = "/bin/sh";             // shell environment variable
+static const char *height      = HEIGHT;                                          // height size window
+static const char *width       = WIDTH;                                           // width size window
+static const char *termname    = "snt";                                           // terminal name
+static const char *shell       = "/bin/sh";                                       // shell environment variable
 static const char *icon_path   = "/usr/share/icons/hicolor/512x512/apps/snt.png"; // icon path
