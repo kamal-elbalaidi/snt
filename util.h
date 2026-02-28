@@ -1,5 +1,5 @@
 // Used to parse colors
-#define TITLE       "Simple new terminal"
+#define TITLE       "simple new terminal"
 #define CLR_R(x)    (((x) & 0xff0000) >> 16)     
 #define CLR_G(x)    (((x) & 0x00ff00) >>  8)
 #define CLR_B(x)    (((x) & 0x0000ff) >>  0)
@@ -28,16 +28,24 @@ static const char cursor_blink(){
 }
 static const char cursorshape(){
   switch (CURSORSHAPE) {
-    case 2 :    return VTE_CURSOR_SHAPE_BLOCK;         return TRUE;
-    case 4 :    return VTE_CURSOR_SHAPE_UNDERLINE;     return TRUE;
-    case 6 :    return VTE_CURSOR_SHAPE_IBEAM;         return TRUE;
-    case 7 :    return VTE_CURSOR_SHAPE_IBEAM;         return TRUE;
-    default:    return FALSE;  
+    case 2 :    return VTE_CURSOR_SHAPE_BLOCK;
+    case 4 :    return VTE_CURSOR_SHAPE_UNDERLINE;
+    case 6 :    return VTE_CURSOR_SHAPE_IBEAM;
+    case 7 :    return VTE_CURSOR_SHAPE_IBEAM;
+    default:    return VTE_CURSOR_SHAPE_BLOCK;
   }
 }
 
+
+static const char* get_css_config() {
+    static char css_str[64];
+    snprintf(css_str, sizeof(css_str), "* { background-color: #%06x; }", CLR_0);
+    return css_str;
+}
+
 // Variables
-static const char *termname           = "snt";
-static const char *shell              = "/bin/sh";             // shell environment variable
-static const char *height             = HEIGHT;                // height size  window
-static const char *width              = WIDTH;                 // width size  window
+static const char *height      = HEIGHT;                // height size  window
+static const char *width       = WIDTH;                 // width size  window
+static const char *termname    = "snt";                 // terminal name
+static const char *shell       = "/bin/sh";             // shell environment variable
+static const char *icon_path   = "/usr/share/icons/hicolor/512x512/apps/snt.png"; // icon path

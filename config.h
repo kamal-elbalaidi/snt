@@ -6,11 +6,12 @@
 #define FONT_SCALE             1                                  // Leave this like this
 #define SCALE_FACTOR           0.1                                // Leave this like this
 #define CURSOR_AH              TRUE                               // auto hide the cursor while typing
-#define CURSOR_BLINK           FALSE                              // cursor blink (true or fulse [on || off])
+#define CURSOR_BLINK           FALSE                              // cursor blink (true or fulse [ on || off ])
 #define SCROLL_LINE            1                                  // count lines in window
 #define CURSORSHAPE            2                                  // 2: Block ("█") 4: Underline ("_") 6: Bar ("|")
+#define BORDERBOX              10                                 // border box vte-terminal tag css
 // Modifier and Key even
-#define MODIFIER               GDK_CONTROL_MASK|GDK_SHIFT_MASK
+#define MODIFIER               (GDK_CONTROL_MASK | GDK_SHIFT_MASK)
 #define COPY                   GDK_KEY_y
 #define PASTE                  GDK_KEY_p
 #define INCREASE_FONT          GDK_KEY_Page_Up

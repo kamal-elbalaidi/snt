@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kamal-elbalaidi/snt/main/simple_new_terminal.png" alt="SNT" width="512" height="512">
+  <img src="https://raw.githubusercontent.com/kamal-elbalaidi/snt/main/snt.png" alt="SNT" width="512" height="512">
 </p>
 
 snt is a terminal emulator based on GTK+ and VTE.
